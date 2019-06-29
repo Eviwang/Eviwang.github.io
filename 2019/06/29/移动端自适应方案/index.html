@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="问题：开发移动端时，通常要适配不同的屏幕，由于每个手机的屏幕大小和ppi不一样。会导致显示不一致的问题。如何做到按一份设计稿，自动适配其他手机屏最佳方案： 解决办法： 根据devicePixelRatio 动态计算viewport。保证永远都是与设计稿1:1的比例，而且可以很好的解决1像素问题 font-size，并且采用统一使用rem单位来布局，就可以解决了。  123var pixelRati">
+<meta name="description" content="问题：开发移动端时，通常要适配不同的屏幕，由于每个手机的屏幕大小和ppi不一样。会导致显示不一致的问题。如何做到按一份设计稿，自动适配其他手机屏最佳方案：">
 <meta name="keywords" content="移动端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动端自适应方案">
 <meta property="og:url" content="http://yoursite.com/2019/06/29/移动端自适应方案/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="问题：开发移动端时，通常要适配不同的屏幕，由于每个手机的屏幕大小和ppi不一样。会导致显示不一致的问题。如何做到按一份设计稿，自动适配其他手机屏最佳方案： 解决办法： 根据devicePixelRatio 动态计算viewport。保证永远都是与设计稿1:1的比例，而且可以很好的解决1像素问题 font-size，并且采用统一使用rem单位来布局，就可以解决了。  123var pixelRati">
+<meta property="og:description" content="问题：开发移动端时，通常要适配不同的屏幕，由于每个手机的屏幕大小和ppi不一样。会导致显示不一致的问题。如何做到按一份设计稿，自动适配其他手机屏最佳方案：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-29T02:17:10.263Z">
+<meta property="og:updated_time" content="2019-06-29T02:53:01.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动端自适应方案">
-<meta name="twitter:description" content="问题：开发移动端时，通常要适配不同的屏幕，由于每个手机的屏幕大小和ppi不一样。会导致显示不一致的问题。如何做到按一份设计稿，自动适配其他手机屏最佳方案： 解决办法： 根据devicePixelRatio 动态计算viewport。保证永远都是与设计稿1:1的比例，而且可以很好的解决1像素问题 font-size，并且采用统一使用rem单位来布局，就可以解决了。  123var pixelRati">
+<meta name="twitter:description" content="问题：开发移动端时，通常要适配不同的屏幕，由于每个手机的屏幕大小和ppi不一样。会导致显示不一致的问题。如何做到按一份设计稿，自动适配其他手机屏最佳方案：">
 
 
 
@@ -268,7 +268,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jerry's Wang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -331,6 +331,7 @@
 
       
         <h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><p>开发移动端时，通常要适配不同的屏幕，由于每个手机的屏幕大小和ppi不一样。会导致显示不一致的问题。<br>如何做到按一份设计稿，自动适配其他手机屏最佳方案：</p>
+<a id="more"></a>
 <h2 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h2><ol>
 <li><p>根据devicePixelRatio 动态计算viewport。保证永远都是与设计稿1:1的比例，而且可以很好的解决1像素问题<br> font-size，并且采用统一使用rem单位来布局，就可以解决了。</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var pixelRatio = 1 / window.devicePixelRatio;</span><br><span class="line">//通过js动态设置视口(viewport)</span><br><span class="line">document.write(&apos;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=&apos;+pixelRatio+&apos;,minimum-scale=&apos;+pixelRatio+&apos;,maximum-scale=&apos;+pixelRatio+&apos;&quot; /&gt;&apos;);</span><br></pre></td></tr></table></figure>
@@ -479,7 +480,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
+                src="/images/avatar.jpg"
                 alt="Jerry's Wang" />
             
               <p class="site-author-name" itemprop="name">Jerry's Wang</p>
@@ -525,6 +526,22 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Eviwang" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wangjie525205537@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -759,6 +776,21 @@
   
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
