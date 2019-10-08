@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, Jerry" />
+  <meta name="keywords" content="npm,cli," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/tags/移动端/index.html">
+<meta name="description" content="npm init -y 初始化配置在package.json中配置版本号，和包的名字 新建index.js文件">
+<meta name="keywords" content="npm,cli">
+<meta property="og:type" content="article">
+<meta property="og:title" content="写一个cli发布到npm">
+<meta property="og:url" content="http://yoursite.com/2019/07/02/写一个cli发布到npm/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
+<meta property="og:description" content="npm init -y 初始化配置在package.json中配置版本号，和包的名字 新建index.js文件">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-08T12:01:18.227Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jerry&#39;s Blog">
+<meta name="twitter:title" content="写一个cli发布到npm">
+<meta name="twitter:description" content="npm init -y 初始化配置在package.json中配置版本号，和包的名字 新建index.js文件">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/移动端/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/07/02/写一个cli发布到npm/"/>
 
 
 
 
 
-  <title>标签: 移动端 | Jerry's Blog</title>
+  <title>写一个cli发布到npm | Jerry's Blog</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,54 +249,196 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>移动端<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/02/写一个cli发布到npm/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jerry's Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerry's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/06/29/移动端自适应方案/" itemprop="url">
-              
-                <span itemprop="name">移动端自适应方案</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">写一个cli发布到npm</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-06-29T08:06:04+08:00"
-              content="2019-06-29" >
-          06-29
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-02T13:27:52+08:00">
+                2019-07-02
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="npm-init-y-初始化配置"><a href="#npm-init-y-初始化配置" class="headerlink" title="npm init -y 初始化配置"></a><code>npm init -y</code> 初始化配置</h2><p>在<code>package.json</code>中配置版本号，和包的名字</p>
+<h2 id="新建index-js文件"><a href="#新建index-js文件" class="headerlink" title="新建index.js文件"></a>新建<code>index.js</code>文件</h2><a id="more"></a>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这里表示默认使用 node 打开</span></span><br><span class="line"><span class="meta">#!/usr/bin/env node</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"hello world!"</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="在package下面加入节点"><a href="#在package下面加入节点" class="headerlink" title="在package下面加入节点"></a>在package下面加入节点</h2><p>新建一个index为入口文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    &#123;</span><br><span class="line">    <span class="string">"bin"</span>: &#123;</span><br><span class="line">        <span class="string">"hello-cli"</span>: <span class="string">"index.js"</span><span class="comment">//这个是命令名字,到时候会执行index.js</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="本地使用"><a href="#本地使用" class="headerlink" title="本地使用"></a>本地使用</h2><p><code>npm link</code>这个会将<code>hello-cli</code>命令加入到<br><code>C:\Users\evi.wang\AppData\Roaming\npm</code></p>
+<p>可以使用<br><code>hello-cli</code>跑起来了</p>
+<h2 id="发布到npm"><a href="#发布到npm" class="headerlink" title="发布到npm"></a>发布到npm</h2><ol>
+<li><a href="https://www.npmjs.com" target="_blank" rel="noopener">https://www.npmjs.com</a> 注册帐号</li>
+<li>创建自己的项目</li>
+<li>运行 <code>npm adduser</code></li>
+<li>执行<code>npm publish</code></li>
+<li>在<code>npm.js</code>网站上搜索包名。</li>
+</ol>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><ol>
+<li><code>publish Failed PUT 403</code> 说明没有权限，需要换一个名字。或者版本号有问题</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://juejin.im/post/5bd90d3ce51d4579362b0390" target="_blank" rel="noopener">https://juejin.im/post/5bd90d3ce51d4579362b0390</a></li>
+<li><a href="http://test.imweb.io/topic/59ffc48c1f0e50753869bf91" target="_blank" rel="noopener">http://test.imweb.io/topic/59ffc48c1f0e50753869bf91</a></li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/weixin.jpg" alt="Jerry's Wang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/npm/" rel="tag"># npm</a>
+          
+            <a href="/tags/cli/" rel="tag"># cli</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/29/移动端自适应方案/" rel="next" title="移动端自适应方案">
+                <i class="fa fa-chevron-left"></i> 移动端自适应方案
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/17/使用verdaccio搭建公司私有仓库/" rel="prev" title="使用verdaccio搭建公司私有仓库">
+                使用verdaccio搭建公司私有仓库 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -299,6 +446,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -319,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -400,6 +560,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#npm-init-y-初始化配置"><span class="nav-number">1.</span> <span class="nav-text">npm init -y 初始化配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建index-js文件"><span class="nav-number">2.</span> <span class="nav-text">新建index.js文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在package下面加入节点"><span class="nav-number">3.</span> <span class="nav-text">在package下面加入节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地使用"><span class="nav-number">4.</span> <span class="nav-text">本地使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布到npm"><span class="nav-number">5.</span> <span class="nav-text">发布到npm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-amp-A"><span class="nav-number">6.</span> <span class="nav-text">Q&amp;A</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -540,6 +716,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

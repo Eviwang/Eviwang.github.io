@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="Array chunk 1234const chunk = (arr, size) =&amp;gt;  Array.from(&amp;#123; length: Math.ceil(arr.length / size) &amp;#125;, (v, i) =&amp;gt;    arr.slice(i * size, i * size + size)  ); 12345// 我的版本function chunk(arr,">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/tags/移动端/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/09/16/my-doc/30-second-js/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
+<meta property="og:description" content="Array chunk 1234const chunk = (arr, size) =&amp;gt;  Array.from(&amp;#123; length: Math.ceil(arr.length / size) &amp;#125;, (v, i) =&amp;gt;    arr.slice(i * size, i * size + size)  ); 12345// 我的版本function chunk(arr,">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-17T13:54:04.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jerry&#39;s Blog">
+<meta name="twitter:description" content="Array chunk 1234const chunk = (arr, size) =&amp;gt;  Array.from(&amp;#123; length: Math.ceil(arr.length / size) &amp;#125;, (v, i) =&amp;gt;    arr.slice(i * size, i * size + size)  ); 12345// 我的版本function chunk(arr,">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/移动端/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/09/16/my-doc/30-second-js/"/>
 
 
 
 
 
-  <title>标签: 移动端 | Jerry's Blog</title>
+  <title> | Jerry's Blog</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,54 +248,200 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>移动端<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/16/my-doc/30-second-js/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jerry's Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerry's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/06/29/移动端自适应方案/" itemprop="url">
-              
-                <span itemprop="name">移动端自适应方案</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-06-29T08:06:04+08:00"
-              content="2019-06-29" >
-          06-29
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-16T21:40:06+08:00">
+                2019-09-16
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><ul>
+<li><p>chunk</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> chunk = <span class="function">(<span class="params">arr, size</span>) =&gt;</span></span><br><span class="line">  <span class="built_in">Array</span>.from(&#123; <span class="attr">length</span>: <span class="built_in">Math</span>.ceil(arr.length / size) &#125;, (v, i) =&gt;</span><br><span class="line">    arr.slice(i * size, i * size + size)</span><br><span class="line">  );</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 我的版本</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">chunk</span>(<span class="params">arr,len</span>)</span>&#123;	</span><br><span class="line">    <span class="keyword">if</span>(arr.length&lt;=len)<span class="keyword">return</span> arr.slice(<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">return</span> [arr.splice(<span class="number">0</span>,len)].concat([fn(arr,len)]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>all</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> all = <span class="function">(<span class="params">arr,fn = <span class="built_in">Boolean</span></span>) =&gt;</span> arr.every(fn);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>allEqual</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> allEqual = <span class="function">(<span class="params">arr</span>) =&gt;</span> arr.every(<span class="function"><span class="params">x</span>=&gt;</span>x === arr[<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>any</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> any = <span class="function">(<span class="params">arr, fn = <span class="built_in">Boolean</span></span>) =&gt;</span> arr.some(<span class="function"><span class="params">x</span>=&gt;</span>fn(x))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>arrayToCSV</p>
+</li>
+</ul>
+<h3 id="2019-9-17"><a href="#2019-9-17" class="headerlink" title="2019-9-17"></a>2019-9-17</h3><ul>
+<li><p>bifurcate</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> bifurcate = <span class="function">(<span class="params">arr,filter</span>)=&gt;</span>&#123;</span><br><span class="line">   <span class="keyword">return</span> [arr.filter(<span class="function">(<span class="params">x,i</span>)=&gt;</span>filter[i]),arr.filter(<span class="function">(<span class="params">x,i</span>)=&gt;</span>!filter[i])]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>bifurcateBy</p>
+</li>
+<li><p>compact 移除false值</p>
+</li>
+<li><p>countBy</p>
+</li>
+<li><p>countOccurrences</p>
+</li>
+<li><p>deepFlatten</p>
+</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/weixin.jpg" alt="Jerry's Wang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/17/使用verdaccio搭建公司私有仓库/" rel="next" title="使用verdaccio搭建公司私有仓库">
+                <i class="fa fa-chevron-left"></i> 使用verdaccio搭建公司私有仓库
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/10/01/my-doc/google developer 与web一同成长/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -299,6 +449,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -319,8 +473,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -400,6 +563,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Array"><span class="nav-number">1.</span> <span class="nav-text">Array</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2019-9-17"><span class="nav-number">1.1.</span> <span class="nav-text">2019-9-17</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -540,6 +719,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
